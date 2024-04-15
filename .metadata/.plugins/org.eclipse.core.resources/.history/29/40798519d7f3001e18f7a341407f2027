@@ -1,0 +1,18 @@
+package com.restTemplate;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Controller {
+
+	@GetMapping(value = "/getHi")
+	public String getHi() {
+		return "கண்ணுக்குள்ள கத்தி வச்சி,\r\n" + "கனவுக்குள்ள நீயும் வந்தா,\r\n" + "வாராதே சந்தோஷமே.\r\n" + "\r\n"
+				+ "விண்ணில் உள்ள மீன் எடுத்து,\r\n" + "விரல் இடுக்கில் போட்டு விட்டா,\r\n"
+				+ "சேராதே பெரும் துன்பமே.\r\n" + "\r\n" + "கண்ணீர் தீராத மேகம்,\r\n" + "கடலுக்குள்ள காதல் முழ்குதே.\r\n"
+				+ "வானம் பாராத சோகம்,\r\n" + "நிலவுக்குள்ள நீரும் ஊருதே.\r\n" + "\r\n" + "வாழ்கின்ற தெய்வம்,\r\n"
+				+ "குறை தீரா பிழை ஆச்சோ.\r\n" + "";
+	}
+
+}
